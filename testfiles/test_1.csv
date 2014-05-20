@@ -1,0 +1,4 @@
+fund,fund_1,100000,3/10/2013,
+buy,fund_1,AAPL,30000,3/11/2013
+individual,Kris,5000,5/27/2013,
+buy,Kris,fund_1,3000,5/28/2013

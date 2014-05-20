@@ -1,0 +1,7 @@
+fund,fund_1,100000,12/1/2013,
+buy,fund_1,NFX,30000,12/2/2013
+individual,indiv1,5000,4/15/2013,
+individual,indiv2,10000,12/2/2013,
+individual,indiv3,2000,12/4/2013,
+buy,indiv1,fund_1,3000,12/3/2013
+buy,indiv2,fund_1,9000,12/3/2013

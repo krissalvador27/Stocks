@@ -1,0 +1,8 @@
+fund,fund1,15000,5/1/2006,
+individual,indiv1,4000,5/16/2006,
+individual,indiv2,7000,5/4/2006,
+buy,fund1,MSFT,5000,5/16/2006
+buy,indiv1,fund1,2500,5/7/2006
+buy,indiv2,fund1,3000,5/17/2006
+buy,indiv2,MON,2000,4/7/2011
+buy,fund1,XRAY,3000,12/29/2012

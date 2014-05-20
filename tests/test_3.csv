@@ -1,0 +1,6 @@
+fund,fund_1,8000,5/10/2009,
+buy,fund_1,ADS,2000,5/11/2009
+individual,indiv1,5000,5/15/2013,
+individual,indiv2,20000,5/15/2013,
+buy,indiv1,fund_1,1000,12/3/2013
+buy,indiv2,fund_1,1000,12/3/2013

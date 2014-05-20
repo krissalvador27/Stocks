@@ -1,0 +1,95 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link rel='stylesheet' type='text/css' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css'>
+<script src='../socket.io/socket.io.js' type='text/javascript'></script>
+<script src='http://code.jquery.com/jquery.min.js' type='text/javascript'></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://www.kunalbabre.com/projects/table2CSV.js" type="text/javascript" ></script> 
+<script src='home.js' type='text/javascript'></script>
+</head>
+<body>
+	<h1>Stocks - Database Design Project</h1>
+	<div id='select-container'>
+		<div id='select-options'>
+			<select id='behavior-select'>
+				<option value='show'>Show</option>
+				<option value='rank'>Rank</option>
+				<option value='compare'>Compare</option>
+			</select>
+			<select id='stockport-select'>
+				<option value='stock'>Stocks</option>
+				<option value='port'>Portfolios</option>
+				<option value='individual'>Individuals</option>
+			</select>
+			<input type='button' onclick='behaviorSelect()' value='Submit'/>
+		</div>
+		<div id='show-stocks'>
+			<select id='stock-select'></select>
+			Start Date:
+			<input type='text' id='start-date'>
+			End Date:
+			<input type='text' id='end-date'>
+			<input type='button' id='submit-stock' onclick='showStocksSelect()' value='Submit'/>
+		</div>
+		<div id='show-ports'>
+			<select id='port-select'></select>
+			<input type='button' id='submit-port' onclick='showPortsSelect()' value='Submit'/>
+		</div>
+		<div id='show-indivs'>
+			<select id='indiv-select'></select>
+			<input type='button' id='submit-indiv' onclick='showIndivsSelect()' value='Submit'/>
+		</div>
+		<div id='rank-stocks'>
+			<select id='rank-stocks-options'>
+				<option value='Increasing'>Strictly Increasing Prices</option>
+				<option value='Risk'>Lowest Risk (Top 5)</option>
+				<option value='Annualized_Rate'>Annualized Rate of Return</option>
+			<select>
+			<input type='button' onclick='rankStocksSelect()' value='Submit'/>
+
+		</div>
+		<div id='rank-ports'>
+			<select id='rank-port-options'>
+				<option value='Total_Return'>Total Return</option>
+				<option value='Net_Worth'>Final Net Worth</option>
+				<option value='Majority_Participants'>Majority Participants</option>
+			</select>
+			<input type='button' onclick='rankPortsSelect()' value='Submit'/>
+		</div>
+		<div id='rank-indivs'>
+			<select id='rank-indiv-options'>
+				<option value='Total_Return'>Total Return</option>
+				<option value='Net_Worth'>Final Net Worth</option>
+			</select>
+			<input type='button' onclick='rankIndivsSelect()' value='Submit'/>
+		</div>
+		<div id='compare-stocks'>
+			<select id='stock1-select'></select>
+			<select id='stock2-select'></select>
+			Start Date:
+			<input type='text' id='start-date2'>
+			End Date:
+			<input type='text' id='end-date2'>
+			<input type='button' id='submit-stock' onclick='compareStocksSelect()' value='Submit'/>
+		</div>
+	</div>
+	<table id='table'></table>
+	<div id='exportCSV'>
+		<button onclick='exportToCSV()'>Export to CSV</button>
+	</div>
+	
+	<div id='upload-file'>
+		<input type='file' name='file' id='file' multiple /><br/>
+		<input type='button' id='submit-file' onclick='uploadFile()' value='Submit'/>
+		<div id='upload-success'></div>
+	</div>
+	<div id='refresh-db'>
+		<input type='button' onclick='refreshDB()' value='Refresh Database'/>
+	</div>
+	</div>
+		<div id='calculate-db'>
+		<input type='button' onclick='calculateDB()' value='Calculate'/>
+	</div>
+</body>
+</html>

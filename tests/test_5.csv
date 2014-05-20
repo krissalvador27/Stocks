@@ -1,0 +1,5 @@
+individual,Kien,5000,12/2/2013,
+fund,fund_1,10000,12/2/2013,
+buy,Kien,fund_1,2500,12/4/2013
+sellbuy,Kien,fund_1,GOOG,12/5/2013
+sell,Kien,GOOG,12/6/2013,

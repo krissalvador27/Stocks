@@ -1,0 +1,15 @@
+{
+  "name": "Finance",
+  "version": "0.0.0",
+  "description": "Project for CMSC424",
+  "private" : true,
+  "dependencies": {
+    "express": "*",
+    "http": "*",
+    "socket.io": "*",
+    "sqlite3": "*" 
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

@@ -1,0 +1,58 @@
+body {
+	font: 14px Helvetica;
+	margin-bottom: 50px;
+}
+
+#table {
+	padding-top:50px;
+	margin: 0 auto;
+	width:800px;
+	text-align: center;
+}
+
+#upload-file {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#upload-success {
+	margin-top: 10px;
+}
+
+#select-container {
+	text-align: center;
+}
+
+#exportCSV, #manual-input, #refresh-db, #calculate-db {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#select-options {
+	margin-bottom: 20px;
+}
+
+input[type="button"], button {
+	color: white;
+	background: #8A80FF;
+	border: none;
+	padding: 10px;
+}
+
+select {
+	height: 35px;
+	border-right: none;
+}
+
+input[type="button"]:hover, button:hover {
+	cursor: pointer;
+}
+
+#show-stocks, #show-ports, #show-indivs, #rank-indivs, #rank-ports, #rank-stocks, #compare-stocks {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px 0 50px 0;
+}
